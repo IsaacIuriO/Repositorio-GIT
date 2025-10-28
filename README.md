@@ -18,7 +18,7 @@ Um jeito para se editar um README já existente no GITHUB, é usando a função 
 
 ## Fork do Repositório
 
-**Caso DESEJE fazer uma fork de algum repositório existente pule para a [Etapa 4](https://github.com/IsaacIuriO/Repositorio-GIT/edit/main/README.md#-4-criando-a-fork)**
+**Caso DESEJE fazer uma fork de algum repositório existente pule para a [Etapa 4](https://github.com/IsaacIuriO/Repositorio-GIT/blob/main/README.md#-4-criando-a-fork)**
 
 **Caso NÃO DESEJE continue lendo este README**
 
