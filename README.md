@@ -24,10 +24,6 @@ Um jeito para se editar um README já existente no GITHUB, é usando a função 
 
 ---
 
-## 1. 
-
----
-
 ## ⚙️ 1. Configuração Inicial
 
 Registra o nome e email (extremamente necessário para commits), define o *vscode* como IDE principal e verifica se tudo funcionou:
@@ -113,7 +109,104 @@ git checkout -b documentacao-colaboracao          # Cria um novo branch, mantend
 
 ---
 
-## 🔆 6. GitFluence
+## 🕹️ 6. Criando o Primeiro Arquivo
+
+Criando um arquivo de texto:
+```bash
+echo "Hello, World! Primeiro arquivo no GIT!" > readme.txt      # Cria um arquivo de texto com o conteúdo entre aspas
+```
+
+---
+
+## 📊 7. Estados dos Arquivos
+
+Mostrando a condição dos arquivos:
+```bash
+git status          # Mostra o estado dos arquivos: novos, modificados ou prontos para _commit_.
+```
+
+---
+
+## 🦾 8. Staging Area
+
+No **Staging Area**, os arquivos são preparados para o _commit_.
+
+```bash
+git add readme.txt       # Adiciona apenas o arquivo mencionado
+git add .                # Adiciona todos os arquivos do diretório (pasta)
+git status               # Mostra o estado
+```
+img
+
+---
+
+## ✅ 9. Commit
+
+No **Commit**, os arquivos são salvos no **GIT LOCAL**.
+
+```bash
+git commit -m "Primeiro Commit"
+```
+
+---
+
+## ✏️ 10. Editar Arquivos
+
+
+---
+
+## ↩️ 11. Desfazer Mudanças
+
+
+---
+
+## 🔍 12. Histórico de Commits
+
+Há alguns comandos que permite ver a ordem cronológica dos _commits_.
+
+```bash
+git log                # Específico para ver o histórico dos commits
+git log --oneline      # Mostra de forma mais resumida
+
+git show               # Comando versátil para ver algumas propriedades
+```
+
+img
+
+---
+
+## ➕ 13. Criar Nova Branch
+
+---
+
+## 🔀 14. Mudar Entre Branches
+
+---
+
+##  15. Commits em Outras Branches
+
+---
+
+## 16. Voltar e Fusionar Branches
+
+---
+
+## 17. Excluir Branches
+
+---
+
+## 18. Ignorar Arquivos no Commit
+
+---
+
+
+
+
+
+
+
+
+## 💡 x. GitFluence
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f534da4f-b766-4cac-b6ff-f3aa314c5197" />
 
@@ -137,10 +230,6 @@ Entrada: *"Como ver as configurações atuais"*
 Entrada: *"Como comparar a nova atualização com a versão antiga"*
 <img width="1020" height="174" alt="ex5" src="https://github.com/user-attachments/assets/53a89ac6-cef1-48c0-844d-439b1a95c860" />
 
-_Ps: Você também pode utilizar perguntas em português!_
-
----
-
-## 7. 
+_OBS: Você também pode utilizar perguntas em português!_
 
 ---
