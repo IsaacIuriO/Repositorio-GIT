@@ -58,19 +58,19 @@ O GIT cria o branch com o nome _master_.
 Mas o ideal é utilizar com o nome _main_:
 
 ```bash
-git branch -m master main
+git branch -m master main          # Muda de main para master
 ```
 
 Se quiser automatizar **main** como padrão para novos repositórios futuros:
 
 ```bash
-git config --global init.defaultBranch main
+git config --global init.defaultBranch main            # Padroniza o nome para arquivos novos
 ```
 
 Lista as branchs e mostra qual a atual:
 
 ```bash
-git branch
+git branch          # Lista
 ```
 img
 
@@ -231,7 +231,7 @@ git switch nova_ramificacao        # Alterna de branches, tornando 'nova_ramific
 É o mesmo processo como todos as outras branches, só que você tem que estar dentro dela para funcionar.
 
 ```bash
-git switch nova_ramificacao        # Alterna de branches, tornando 'nova_ramificacao' como a atual
+git switch nova_ramificacao                           # Alterna de branches, tornando 'nova_ramificacao' como a atual
 
 echo "Olá, Mundo! (de novo)" > aleatorio.txt          # Cria arquivo de texto
 git add aleatorio.txt                                 # Adiciona no Staging Area
@@ -240,23 +240,109 @@ git commit -m "Mais uma mudança"                      # Salva no repositório
 
 ---
 
-### ☯️ 16. Voltar e Fusionar Branches
+### ☯️ 16. Fusão entre Branches
 
+Antes de fusionar uma _branch_ a outra, é necessário que troque para a _branch_ principal.
 
+```bash
+git switch main
+
+git merge nova_ramificacao
+```
 
 ---
 
 ### 🗑️ 17. Excluir Branches
 
+Quer excluir?
+
+```bash
+git branch -d nova_ramificacao
+```
+
 ---
 
 ### 🫥 18. Ignorar Arquivos no Commit
 
+O **.gitignore** é uma extensão de arquivo muito especial. Ele permite que você possa escolher de forma geral os arquivos que não serão _commitados_.
+
+Serve bastante para a exclusão de arquivos repetidos ou pesados do seu _backup_.
+
+```bash
+echo .gitignore > "node_modules/"
+```
+
 ---
 
-## 📋 RESUMO
+## 📋 TESTE RÁPIDO
 
-Um resumo exemplificado com as principais ações que poderá necessitar alguma hora.
+Utilizando todos os comandos listados acima de forma eficiente:
+
+```bash
+git config --global user.name "Seu Nome"                  					   # Definindo nome
+git config --global user.email "seuemail@exemplo.com"    					  # Definindo email
+git config --global core.editor "code --wait"            			     # Definindo vscode como padrão
+git config --list                                        				   	      # Verificação
+
+mkdir meu_projeto   										# Cria pasta
+cd meu_projeto      										   # Entra na pasta
+
+git init            									   # Cria repositório local
+
+git branch -m master main          							 # Muda de main para master
+
+git config --global init.defaultBranch main           			     # Padroniza o nome para arquivos novos
+
+git branch          										    # Lista branchs
+
+git clone <URl GitFork>        						       # Baixa o repositório do Fork no GIT
+cd git-local          							    # Entra na pasta do repositório clonado
+
+git checkout -b documentacao-colaboracao         		# Cria um novo branch, mantendo o main limpo
+
+echo "Hello, World! Primeiro arquivo no GIT!" > readme.txt    # Cria um arquivo de texto com o conteúdo entre aspas
+
+git status               # Mostra o estado
+
+echo "Criando uma nova linha" >> readme.txt             	     # Adiciona uma nova linha no arquivo existente
+git status                                             				     # Verifica o estado do arquivo
+
+git add readme.txt                                      			 # Coloca no Staging Area o arquivo
+
+git diff                                              # Mostra as diferenças entre uma versão de um arquivo e outro
+
+git restore --staged readme.txt     				   # Tiram o que foi mudado, depois do staged (add)
+
+git commit -m "Atualiza readme.txt com nova linha"      	 	   # Salva no repositório e diz o que mudou
+
+echo "Criando uma outra nova linha" >> readme.txt            # Adiciona uma nova linha no arquivo existente de novo
+
+git restore readme.txt             				    # Tiram o que foi mudado, antes do staged (add)
+
+git diff
+
+git log               						      # Específico para ver o histórico dos commits
+git log --oneline      							   	    # Mostra de forma mais resumida
+
+git show               					  	   # Comando versátil para ver algumas propriedades
+
+git branch                         					             # Lista as branches existentes
+
+git branch nova_ramificacao        							     # Cria uma nova branch
+git switch nova_ramificacao                         # Alterna de branches, tornando 'nova_ramificacao' como a atual
+
+echo "Olá, Mundo! (de novo)" > aleatorio.txt          					    # Cria arquivo de texto
+git add aleatorio.txt                                					 # Adiciona no Staging Area
+git commit -m "Mais uma mudança"                      					     # Salva no repositório
+
+git switch main									  	# Muda pra branch principal
+
+git merge nova_ramificacao 										  # Fusiona
+
+git branch -d nova_ramificacao									    # Exclui branch
+
+echo .gitignore > "node_modules/"							       # Cria um .gitignore
+```
 
 ---
 
