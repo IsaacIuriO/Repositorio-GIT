@@ -1,22 +1,24 @@
 # Repositorio-GIT
 
-## 🎯 Objetivo
+## 🎯 OBJETIVO
 
 Este repositório tem como objetivo documentar e revisar toda a aprendizagem sobre o **GIT** e **GITHUB** no primeiro ano de ensino de Análise e Desenvolvimento de Sistemas - SENAI
 
 ---
 
-## 🌩️ 0. Iniciando o Git
+## 🌩️ 0. INICIANDO O GIT
+
+É necessário apenas dois pré-requisitos antes de estruturar seus projetos:
 
 - Baixe o **[GitBash](https://git-scm.com/install/)**, utilizando a própria IDE do Git, ou o **[Git para Windows](https://git-scm.com/install/windows)**, utilizando o Prompt de Comando como IDE.
 
-## Com ou Sem Fork?
+### Com ou Sem Fork?
 
-Antes de programar dentro do Git, precisamos decidir se iremos editar um arquivo já existente ou não.
+A **fork** pode ser um pré-requisitante. Antes de programar dentro do Git, precisamos decidir se iremos editar um arquivo já existente ou se vamos criar um novo.
 
-Um jeito para se editar um README já existente no GITHUB, é usando a função **Fork**.
+Um jeito para editar um README já existente no GITHUB, é utilizando a função **Fork**.
 
-## Fork do Repositório
+### Fork do Repositório GITHUB
 
 **Caso DESEJE fazer uma fork de algum repositório existente pule para a [Etapa 4](https://github.com/IsaacIuriO/Repositorio-GIT/blob/main/README.md#-4-criando-a-fork)**
 
@@ -24,7 +26,9 @@ Um jeito para se editar um README já existente no GITHUB, é usando a função 
 
 ---
 
-## ⚙️ 1. Configuração Inicial
+### ⚙️ 1. Configuração Inicial
+
+Após abrir o seu espaço de programação é necessário configurar alguns aspectos, para tornar seu projeto mais limpo e organizado.
 
 Registra o nome e email (extremamente necessário para commits), define o *vscode* como IDE principal e verifica se tudo funcionou:
 
@@ -37,7 +41,7 @@ git config --list                                         # Verificação
 
 ---
 
-## 📂 2. Cria Repositório (pasta)
+### 📂 2. Cria Repositório (pasta)
 
 ```bash
 mkdir meu_projeto   # Cria pasta
@@ -47,9 +51,10 @@ git init            # Cria repositório local
 ```
 ---
 
-## 🌿 3. Branch `master` para `main`
+### 🌿 3. Branch `master` para `main`
 
-O GIT cria o branch com o nome _master_
+O GIT cria o branch com o nome _master_.
+
 Mas o ideal é utilizar com o nome _main_:
 
 ```bash
@@ -71,7 +76,7 @@ img
 
 --- 
 
-## 🍴 4. Criando a Fork
+### 🍴 4. Criando a Fork
 
 **Pule para a Etapa 6 se NÃO DESEJAR criar a FORK**
 
@@ -85,13 +90,16 @@ img
 
 ---
 
-## 🍽️ 5. Utilizando a Fork
+### 🍽️ 5. Utilizando a Fork
+
+Agora com a _fork_ criada, basta utiliza-lá no seu projeto.
 
 - Copie o link
+
 <img width="711" height="299" alt="fork3" src="https://github.com/user-attachments/assets/89a28783-6970-4c9b-ad89-0cf75a08d7cf" />
 
 - Abra o Git 
-- Faça as configurações iniciais (etapa 2)
+- Faça as configurações iniciais ([Etapa 1](https://github.com/IsaacIuriO/Repositorio-GIT/blob/main/README.md#%EF%B8%8F-1-configura%C3%A7%C3%A3o-inicial))
 - Clone o repositório dentro do Git
 ```bash
 git clone <URl GitFork>          # Baixa o repositório do Fork
@@ -109,7 +117,7 @@ git checkout -b documentacao-colaboracao          # Cria um novo branch, mantend
 
 ---
 
-## 🕹️ 6. Criando o Primeiro Arquivo
+### 🕹️ 6. Criando o Primeiro Arquivo
 
 Criando um arquivo de texto:
 ```bash
@@ -118,7 +126,7 @@ echo "Hello, World! Primeiro arquivo no GIT!" > readme.txt      # Cria um arquiv
 
 ---
 
-## 📊 7. Estados dos Arquivos
+### 📊 7. Estados dos Arquivos
 
 Mostrando a condição dos arquivos:
 ```bash
@@ -127,7 +135,7 @@ git status          # Mostra o estado dos arquivos: novos, modificados ou pronto
 
 ---
 
-## 🦾 8. Staging Area
+### 🦾 8. Staging Area
 
 No **Staging Area**, os arquivos são preparados para o _commit_.
 
@@ -140,7 +148,7 @@ img
 
 ---
 
-## ✅ 9. Commit
+### ✅ 9. Commit
 
 No **Commit**, os arquivos são salvos no **GIT LOCAL**.
 
@@ -150,17 +158,17 @@ git commit -m "Primeiro Commit"
 
 ---
 
-## ✏️ 10. Editar Arquivos
+### ✏️ 10. Editar Arquivos
 
 
 ---
 
-## ↩️ 11. Desfazer Mudanças
+### ↩️ 11. Desfazer Mudanças
 
 
 ---
 
-## 🔍 12. Histórico de Commits
+### 🔍 12. Histórico de Commits
 
 Há alguns comandos que permite ver a ordem cronológica dos _commits_.
 
@@ -175,27 +183,33 @@ img
 
 ---
 
-## ➕ 13. Criar Nova Branch
+### ➕ 13. Criar Nova Branch
 
 ---
 
-## 🔀 14. Mudar Entre Branches
+### 🔀 14. Mudar Entre Branches
 
 ---
 
-##  15. Commits em Outras Branches
+###  15. Commits em Outras Branches
 
 ---
 
-## 16. Voltar e Fusionar Branches
+### 16. Voltar e Fusionar Branches
 
 ---
 
-## 17. Excluir Branches
+### 17. Excluir Branches
 
 ---
 
-## 18. Ignorar Arquivos no Commit
+### 18. Ignorar Arquivos no Commit
+
+---
+
+## 📋 RESUMO
+
+Um resumo exemplificado com as principais ações que poderá necessitar alguma hora.
 
 ---
 
@@ -204,9 +218,7 @@ img
 
 
 
-
-
-## 💡 x. GitFluence
+### 💡 x. GitFluence
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f534da4f-b766-4cac-b6ff-f3aa314c5197" />
 
