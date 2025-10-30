@@ -163,11 +163,31 @@ git commit -m "Primeiro Commit"
 
 ### ✏️ 10. Editar Arquivos
 
+Caso deseje mudar um arquivo salvo:
+
+```bash
+echo "Criando uma nova linha" >> readme.txt             # Adiciona uma nova linha no arquivo existente
+git status                                              # Verifica o estado do arquivo
+
+git diff                                                # Mostra as diferenças entre uma versão de um arquivo e outro
+
+git add readme.txt                                      # Coloca no Staging Area o arquivo
+git commit -m "Atualiza readme.txt com nova linha"      # Salva no repositório e diz o que mudou
+```
+
+img
 
 ---
 
 ### ↩️ 11. Desfazer Mudanças
 
+Caso tenha feito algum erro:
+
+```bash
+git restore readme.txt              # Tiram o que foi mudado, antes do staged (add)
+
+git restore --staged readme.txt     # Tiram o que foi mudado, depois do staged (add)
+```
 
 ---
 
@@ -188,25 +208,49 @@ img
 
 ### ➕ 13. Criar Nova Branch
 
+```bash
+git branch                         # Lista as branches existentes
+
+git branch nova_ramificacao        # Cria uma nova branch
+```
+
 ---
 
 ### 🔀 14. Mudar Entre Branches
 
----
+```bash
+git branch                         # Lista as branches existentes
 
-###  15. Commits em Outras Branches
-
----
-
-### 16. Voltar e Fusionar Branches
+git switch nova_ramificacao        # Alterna de branches, tornando 'nova_ramificacao' como a atual
+```
 
 ---
 
-### 17. Excluir Branches
+### 👌 15. Commits em Outras Branches
+
+É o mesmo processo como todos as outras branches, só que você tem que estar dentro dela para funcionar.
+
+```bash
+git switch nova_ramificacao        # Alterna de branches, tornando 'nova_ramificacao' como a atual
+
+echo "Olá, Mundo! (de novo)" > aleatorio.txt          # Cria arquivo de texto
+git add aleatorio.txt                                 # Adiciona no Staging Area
+git commit -m "Mais uma mudança"                      # Salva no repositório
+```
 
 ---
 
-### 18. Ignorar Arquivos no Commit
+### ☯️ 16. Voltar e Fusionar Branches
+
+
+
+---
+
+### 🗑️ 17. Excluir Branches
+
+---
+
+### 🫥 18. Ignorar Arquivos no Commit
 
 ---
 
