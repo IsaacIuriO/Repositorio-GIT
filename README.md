@@ -6,7 +6,7 @@ Este repositório tem como objetivo documentar e revisar toda a aprendizagem sob
 
 ---
 
-## 🌩️ 0. INICIANDO O GIT
+## 🌩️ INICIANDO O GIT
 
 É necessário apenas dois pré-requisitos antes de estruturar seus projetos:
 
@@ -100,17 +100,20 @@ Agora com a _fork_ criada, basta utiliza-lá no seu projeto.
 
 - Abra o Git 
 - Faça as configurações iniciais ([Etapa 1](https://github.com/IsaacIuriO/Repositorio-GIT/blob/main/README.md#%EF%B8%8F-1-configura%C3%A7%C3%A3o-inicial))
-- Clone o repositório dentro do Git
+- Clone o repositório dentro do Git:
+
 ```bash
-git clone <URl GitFork>          # Baixa o repositório do Fork
+git clone <URl GitFork>          # Baixa o repositório do Fork no GIT
 ```
 
-- Acessa a pasta
+- Acessa a pasta:
+
 ```bash
 cd git-local          # Entra na pasta do repositório clonado
 ```
 
-- E crie um _branch_
+- E crie um _branch_:
+
 ```bash
 git checkout -b documentacao-colaboracao          # Cria um novo branch, mantendo o main limpo
 ```
