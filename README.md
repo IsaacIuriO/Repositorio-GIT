@@ -279,69 +279,69 @@ echo .gitignore > "node_modules/"
 Utilizando todos os comandos listados acima de forma eficiente:
 
 ```bash
-git config --global user.name "Seu Nome"                  					   # Definindo nome
-git config --global user.email "seuemail@exemplo.com"    					  # Definindo email
-git config --global core.editor "code --wait"            			     # Definindo vscode como padrão
-git config --list                                        				   	      # Verificação
+git config --global user.name "Seu Nome"                  		# Definindo nome
+git config --global user.email "seuemail@exemplo.com"    			# Definindo email
+git config --global core.editor "code --wait"            			# Definindo vscode como padrão
+git config --list                                        			# Verificação
 
-mkdir meu_projeto   										# Cria pasta
-cd meu_projeto      										   # Entra na pasta
+mkdir meu_projeto   										                      # Cria pasta
+cd meu_projeto      									                   	    # Entra na pasta
 
-git init            									   # Cria repositório local
+git init            									                        # Cria repositório local
 
-git branch -m master main          							 # Muda de main para master
+git branch -m master main          							              # Muda de main para master
 
-git config --global init.defaultBranch main           			     # Padroniza o nome para arquivos novos
+git config --global init.defaultBranch main           	      # Padroniza o nome para arquivos novos
 
-git branch          										    # Lista branchs
+git branch          										                      # Lista branchs
 
-git clone <URl GitFork>        						       # Baixa o repositório do Fork no GIT
-cd git-local          							    # Entra na pasta do repositório clonado
+git clone <URl GitFork>        						                    # Baixa o repositório do Fork no GIT
+cd git-local          							                          # Entra na pasta do repositório clonado
 
-git checkout -b documentacao-colaboracao         		# Cria um novo branch, mantendo o main limpo
+git checkout -b documentacao-colaboracao         		          # Cria um novo branch, mantendo o main limpo
 
 echo "Hello, World! Primeiro arquivo no GIT!" > readme.txt    # Cria um arquivo de texto com o conteúdo entre aspas
 
-git status               # Mostra o estado
+git status                                                    # Mostra o estado
 
-echo "Criando uma nova linha" >> readme.txt             	     # Adiciona uma nova linha no arquivo existente
-git status                                             				     # Verifica o estado do arquivo
+echo "Criando uma nova linha" >> readme.txt                   # Adiciona uma nova linha no arquivo existente
+git status                                                    # Verifica o estado do arquivo
 
-git add readme.txt                                      			 # Coloca no Staging Area o arquivo
+git add readme.txt                                            # Coloca no Staging Area o arquivo
 
-git diff                                              # Mostra as diferenças entre uma versão de um arquivo e outro
+git diff                                                      # Mostra as diferenças entre uma versão de um arquivo e outro
 
-git restore --staged readme.txt     				   # Tiram o que foi mudado, depois do staged (add)
+git restore --staged readme.txt     				                  # Tiram o que foi mudado, depois do staged (add)
 
-git commit -m "Atualiza readme.txt com nova linha"      	 	   # Salva no repositório e diz o que mudou
+git commit -m "Atualiza readme.txt com nova linha"            # Salva no repositório e diz o que mudou
 
-echo "Criando uma outra nova linha" >> readme.txt            # Adiciona uma nova linha no arquivo existente de novo
+echo "Criando uma outra nova linha" >> readme.txt             # Adiciona uma nova linha no arquivo existente de novo
 
-git restore readme.txt             				    # Tiram o que foi mudado, antes do staged (add)
+git restore readme.txt             				                    # Tiram o que foi mudado, antes do staged (add)
 
 git diff
 
-git log               						      # Específico para ver o histórico dos commits
-git log --oneline      							   	    # Mostra de forma mais resumida
+git log               						                            # Específico para ver o histórico dos commits
+git log --oneline      							   	                      # Mostra de forma mais resumida
 
-git show               					  	   # Comando versátil para ver algumas propriedades
+git show               					  	                          # Comando versátil para ver algumas propriedades
 
-git branch                         					             # Lista as branches existentes
+git branch                         					                  # Lista as branches existentes
 
-git branch nova_ramificacao        							     # Cria uma nova branch
-git switch nova_ramificacao                         # Alterna de branches, tornando 'nova_ramificacao' como a atual
+git branch nova_ramificacao        							              # Cria uma nova branch
+git switch nova_ramificacao                                   # Alterna de branches, tornando 'nova_ramificacao' como a atual
 
-echo "Olá, Mundo! (de novo)" > aleatorio.txt          					    # Cria arquivo de texto
-git add aleatorio.txt                                					 # Adiciona no Staging Area
-git commit -m "Mais uma mudança"                      					     # Salva no repositório
+echo "Olá, Mundo! (de novo)" > aleatorio.txt                  # Cria arquivo de texto
+git add aleatorio.txt                                        	# Adiciona no Staging Area
+git commit -m "Mais uma mudança"                              # Salva no repositório
 
-git switch main									  	# Muda pra branch principal
+git switch main									  	                          # Muda pra branch principal
 
-git merge nova_ramificacao 										  # Fusiona
+git merge nova_ramificacao 										                # Fusiona
 
-git branch -d nova_ramificacao									    # Exclui branch
+git branch -d nova_ramificacao									              # Exclui branch
 
-echo .gitignore > "node_modules/"							       # Cria um .gitignore
+echo .gitignore > "node_modules/"							                # Cria um .gitignore
 ```
 
 ---
