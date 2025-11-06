@@ -90,7 +90,7 @@ img
 
 ---
 
-### 🍽️ 5. Utilizando a Fork
+### 🍽️ 5. Utilizando do Repositório
 
 Agora com a _fork_ criada, basta utiliza-lá no seu projeto.
 
@@ -99,7 +99,7 @@ Agora com a _fork_ criada, basta utiliza-lá no seu projeto.
 <img width="711" height="299" alt="fork3" src="https://github.com/user-attachments/assets/89a28783-6970-4c9b-ad89-0cf75a08d7cf" />
 
 - Abra o Git 
-- Faça as configurações iniciais ([Etapa 1](https://github.com/IsaacIuriO/Repositorio-GIT/blob/main/README.md#%EF%B8%8F-1-configura%C3%A7%C3%A3o-inicial))
+- Faça as configurações iniciais ([Etapa 1 - 🌩️ INICIANDO GIT](https://github.com/IsaacIuriO/Repositorio-GIT/blob/main/README.md#%EF%B8%8F-1-configura%C3%A7%C3%A3o-inicial))
 - Clone o repositório dentro do Git:
 
 ```bash
@@ -117,6 +117,8 @@ cd git-local          # Entra na pasta do repositório clonado
 ```bash
 git checkout -b documentacao-colaboracao          # Cria um novo branch, mantendo o main limpo
 ```
+
+[Voltar para a Etapa 4 - KJKJKJKJKJKJ]()
 
 ---
 
@@ -354,7 +356,24 @@ Compartilhar o seu repositório para colaboração de outras pessoas, faz do seu
 
 - GIT instalado.
 - Ter, ao menos, uma conta GITHUB para cada membro da colaboração.
-- O membro principal deve ter um projeto local e já inicializado ([Etapa 1 - 🌩️ INICIANDO GIT](https://github.com/IsaacIuriO/Repositorio-GIT/blob/main/README.md#%EF%B8%8F-iniciando-o-git)).
+- O Membro A (principal) deve ter um projeto local e já inicializado e configurado ([Etapa 1 - 🌩️ INICIANDO GIT](https://github.com/IsaacIuriO/Repositorio-GIT/blob/main/README.md#%EF%B8%8F-iniciando-o-git)).
+
+---
+
+## 🗃️ REPOSITÓRIO REMOTO (Membro A)
+
+---
+
+### 🧒 Criando Repositório
+
+- Acesse o GitHub e crie um novo Repositório.
+- Defina um nome (ex: projeto-colaborativo-privado).
+- Selecione a opção **Private** ou **Privado**.
+- Não marque a opção para adicionar nem o README, nem o .gitignore.
+
+---
+
+### 👨‍👩‍👧‍👦 Conectando o Repositório Local ao Remoto
 
 ---
 
