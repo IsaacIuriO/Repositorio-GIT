@@ -346,16 +346,23 @@ echo .gitignore > "node_modules/"							                # Cria um .gitignore
 
 ---
 
+## 📤 COLABORAÇÃO E COMPARTILHAMENTO
 
+Compartilhar o seu repositório para colaboração de outras pessoas, faz do seu projeto único, regrado e eficiente.
 
+É necessário alguns pré-requisitos, para fazê-lo funcionar:
 
+- GIT instalado.
+- Ter, ao menos, uma conta GITHUB para cada membro da colaboração.
+- O membro principal deve ter um projeto local e já inicializado ()
 
+---
 
-### 💡 x. GitFluence
+### 💡 Help - GitFluence
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f534da4f-b766-4cac-b6ff-f3aa314c5197" />
 
-Acesse: [GitFluence](https://www.gitfluence.com/) - Ele é um auxiliador para comandos no Git.
+Acesse: [GitFluence](https://www.gitfluence.com/) - Ele é um website/auxiliador para comandos no Git.
 
 *Como funciona:* Pergunte a ele o que deseja fazer no Git e ele, SOMENTE, te retornará o código.
 
@@ -363,6 +370,7 @@ Acesse: [GitFluence](https://www.gitfluence.com/) - Ele é um auxiliador para co
 
 Entrada: *"Push the new branch to the remote repository"*
 <img width="1022" height="210" alt="ex1" src="https://github.com/user-attachments/assets/eaf5ad11-030c-4c47-847e-4302db2e8451" />
+
 Entrada: *"See all my current branches"*
 <img width="1021" height="178" alt="ex2" src="https://github.com/user-attachments/assets/e3b3706b-03b9-480b-b66d-5eb66f59f0fb" />
 
