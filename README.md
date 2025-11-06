@@ -354,7 +354,7 @@ Compartilhar o seu repositório para colaboração de outras pessoas, faz do seu
 
 - GIT instalado.
 - Ter, ao menos, uma conta GITHUB para cada membro da colaboração.
-- O membro principal deve ter um projeto local e já inicializado ()
+- O membro principal deve ter um projeto local e já inicializado ([Etapa 1 - 🌩️ INICIANDO GIT](https://github.com/IsaacIuriO/Repositorio-GIT/blob/main/README.md#%EF%B8%8F-iniciando-o-git)).
 
 ---
 
